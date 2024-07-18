@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Relojeria Latam</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="lobby_title">Relojeria Latam</string>
+    <string name="lobby_description">Contamos con 5 sucursales a lo largo del mundo. Aqui puedes ver todas nuestras sucursales junto con su
+    direccion y mucho mas acerca de cada tienda.</string>
 </resources>

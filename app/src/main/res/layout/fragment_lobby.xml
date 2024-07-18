@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.LobbyFragment.LobbyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Titulo -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lobby_title"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/title_description"
+            />
+
+        <!-- Descripcion -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lobby_description"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/title_main"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/card1"/>
+
+
+        <!-- CardView Sucursal 1  -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            app:layout_constraintTop_toBottomOf="@id/title_description"
+            app:layout_constraintBottom_toTopOf="@id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="80dp"
+            app:cardElevation="5dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            android:clickable="true"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/card1_bc_image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="@dimen/material_emphasis_disabled"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sucursal_uno"
+                    android:contentDescription="descimagen"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/text_view_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cicero Store"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/text_view_description"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/text_view_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Roma, Italia"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_title"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- CardView Sucursal 2 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="80dp"
+            app:cardElevation="5dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/card1"
+            app:layout_constraintBottom_toTopOf="@id/card3"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/card2_bc_image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="@dimen/material_emphasis_disabled"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sucursal_2"
+                    android:contentDescription="descimagen"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/title_card2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Li Europan lingues"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/card2_description"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/card2_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Paris, Francia"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/title_card2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- CardView Sucursal 3 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="80dp"
+            app:cardElevation="5dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/card2"
+            app:layout_constraintBottom_toTopOf="@id/card4"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/card3_bc_image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="@dimen/material_emphasis_disabled"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sucursal_3"
+                    android:contentDescription="descimagen"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/title_card3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kafka Store"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/card3_description"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/card3_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Josefov, Republica Checa"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/title_card3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- CardView Sucursal 4 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="80dp"
+            app:cardElevation="5dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/card3"
+            app:layout_constraintBottom_toTopOf="@id/card6"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/card4_bc_image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="@dimen/material_emphasis_disabled"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sucursal_4"
+                    android:contentDescription="descimagen"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/title_card4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Love Craft Arts"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/card4_description"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/card4_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=" 65 Weybosset St, Estados Unidos"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/title_card4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- CardView Sucursal 5 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="80dp"
+            app:cardElevation="5dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/card4"
+            app:layout_constraintBottom_toTopOf="@id/footer"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="70dp"
+            android:clickable="true"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/card6_bc_image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="@dimen/material_emphasis_disabled"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sucursal_5"
+                    android:contentDescription="descimagen"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/title_card6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="The Ancient Mariner"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/card6_description"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/card6_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="The Esplanade, Reino Unido"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/title_card6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Footer -->
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/card6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gracias por preferirnos pronto tendremos redes sociales"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relojeria Latam © 2024"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

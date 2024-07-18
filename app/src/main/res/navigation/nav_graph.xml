@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/lobbyFragment">
+
+    <fragment
+        android:id="@+id/lobbyFragment"
+        android:name="com.example.relojerialatam.view.LobbyFragment.LobbyFragment"
+        android:label="fragment_lobby"
+        tools:layout="@layout/fragment_lobby" >
+        <action
+            android:id="@+id/action_lobbyFragment_to_sucursal1Fragment"
+            app:destination="@id/sucursal1Fragment" />
+        <action
+            android:id="@+id/action_lobbyFragment_to_sucursal2Fragment"
+            app:destination="@id/sucursal2Fragment" />
+        <action
+            android:id="@+id/action_lobbyFragment_to_sucursal3Fragment"
+            app:destination="@id/sucursal3Fragment" />
+        <action
+            android:id="@+id/action_lobbyFragment_to_sucursal4Fragment"
+            app:destination="@id/sucursal4Fragment" />
+        <action
+            android:id="@+id/action_lobbyFragment_to_sucursal5Fragment"
+            app:destination="@id/sucursal5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sucursal1Fragment"
+        android:name="com.example.relojerialatam.view.Sucursal1.Sucursal1Fragment"
+        android:label="fragment_sucursal1"
+        tools:layout="@layout/fragment_sucursal1" />
+    <fragment
+        android:id="@+id/sucursal2Fragment"
+        android:name="com.example.relojerialatam.view.Sucursal2.Sucursal2Fragment"
+        android:label="fragment_sucursal2"
+        tools:layout="@layout/fragment_sucursal2" />
+    <fragment
+        android:id="@+id/sucursal3Fragment"
+        android:name="com.example.relojerialatam.view.Sucursal3.Sucursal3Fragment"
+        android:label="fragment_sucursal3"
+        tools:layout="@layout/fragment_sucursal3" />
+    <fragment
+        android:id="@+id/sucursal4Fragment"
+        android:name="com.example.relojerialatam.view.Sucursal4.Sucursal4Fragment"
+        android:label="fragment_sucursal4"
+        tools:layout="@layout/fragment_sucursal4" />
+    <fragment
+        android:id="@+id/sucursal5Fragment"
+        android:name="com.example.relojerialatam.view.Sucursal5.Sucursal5Fragment"
+        android:label="fragment_sucursal5"
+        tools:layout="@layout/fragment_sucursal5" />
+</navigation>
