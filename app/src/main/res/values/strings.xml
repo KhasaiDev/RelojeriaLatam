@@ -6,4 +6,51 @@
     <string name="lobby_title">Relojeria Latam</string>
     <string name="lobby_description">Contamos con 5 sucursales a lo largo del mundo. Aqui puedes ver todas nuestras sucursales junto con su
     direccion y mucho mas acerca de cada tienda.</string>
+
+    <string name="sucursal1_descripcin">
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+    voluptatem sequi nesciunt.\nIpiere totaninoc:
+    </string>
+    <string name="sucursal1_direccion">Estamos ubicados en: Colosseum, Piazza del Colosseo, 1, 00184 Roma RM, Italy</string>
+    <string name="sucursal1_horarios">Horarios de atención\n
+        \nLunes a viernes desde las 9:00 a las 18:30 \nSábados y domingos abierto desde las 10:30 a las 15:30
+    </string>
+
+
+    <string name="sucursal2_descripcin">
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+    voluptatem sequi nesciunt.\nIpiere totaninoc:
+    </string>
+    <string name="sucursal2_direccion">Estamos ubicados en: Panthéon, Pl. du Panthéon, 75005 Paris, France</string>
+    <string name="sucursal2_horarios">Horario de atención\n
+        \nLunes a viernes desde las 9:00 a las 18:30 \nFines de semana cerrado</string>
+
+
+
+    <string name="sucursal3_direccion">Estamos ubicados en: Prague Astronomical Clock, Staroměstské nám. 1, 110 00 Josefov, R.Checa</string>
+    <string name="sucursal3_horarios">Horario de atención\n
+        \nLunes a viernes desde las 9:00 a las 18:30 \nFines de semana cerrado</string>
+
+
+
+    <string name="sucursal4_direccion">Estamos ubicados en: Lovecraft Arts and Sciences, 65 Weybosset St, Providence, RI 02903, United States</string>
+    <string name="sucursal4_horarios">Horario de atención\n
+        \nLunes a viernes desde las 9:00 a las 18:30 \nFines de semana cerrado</string>
+
+
+
+    <string name="sucursal5_direccion">Estamos ubicados en:  Public Art: The Ancient Mariner, 11 The Esplanade, Watchet TA23 0AH, United Kingdom</string>
+    <string name="sucursal5_horarios">Horario de atención\n
+        \nLunes a viernes desde las 9:00 a las 18:30 \nFines de semana cerrado</string>
+
+
+
+
+
 </resources>

@@ -1,14 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/beige_claro"
     tools:context=".view.Sucursal2.Sucursal2Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
+        <!-- Titulo -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/sucursal2_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Li Europan lingues"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/sucursal2_description"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
+            />
 
-</FrameLayout>
+        <!-- Descripcion -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/sucursal2_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="20dp"
+            android:text="@string/sucursal2_descripcin"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sucursal2_title"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sucursal_2"
+            app:layout_constraintTop_toBottomOf="@id/sucursal2_title"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+        </ImageView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/sucursal2_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sucursal2_description"
+            android:text="@string/sucursal2_direccion"
+            android:layout_marginTop="300dp"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:clickable="true"
+            >
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/sucursal2_direccion"
+            android:text="@string/sucursal2_horarios"
+            android:layout_marginTop="30dp"
+            android:textSize="15sp"
+            >
+        </com.google.android.material.textview.MaterialTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
